@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type='text/css' href="style.css">
+</head>
+<body>
+    <section id='calculator'>
+        <div id='display'>
+            <input type='text' class='screen' id='display-output' disabled><br>
+            <input type="text" class='screen' id="display-input">
+        </div>
+        <div id="buttons">
+            <div class='row'>
+                <button value='(' class='operator' onclick="display('(')">(</button>
+                <button value=')' class='operator' onclick="display(')')">)</button>
+                <button value='%' class='operator' onclick="display('%')">%</button>
+                <button value='AC' class='operator' onclick="clr()">AC</button>
+            </div>
+            <div class='row'>
+                <button value='7' class='number' onclick="display('7')">7</button>
+                <button value='8' class='number' onclick="display('8')">8</button>
+                <button value='9' class='number' onclick="display('9')">9</button>
+                <button value='/' class='operator' onclick="display('/')">/</button>
+            </div>
+            <div class='row'>
+                <button value='4' class='number' onclick="display('4')">4</button>
+                <button value='5' class='number' onclick="display('5')">5</button>
+                <button value='6' class='number' onclick="display('6')">6</button>
+                <button value='*' class='operator' onclick="display('*')">*</button>
+            </div>
+            <div class='row'>
+                <button value='1' class='number' onclick="display('1')">1</button>
+                <button value='2' class='number' onclick="display('2')">2</button>
+                <button value='3' class='number' onclick="display('3')">3</button>
+                <button value='-' class='operator' onclick="display('-')">-</button>
+            </div>
+            <div class='row'>
+                <button value='0' class='number' onclick="display('0')">0</button>
+                <button value='.' class='number' onclick="display('.')">.</button>
+                <button value='=' class='equal-to' onclick="solve()">=</button>
+                <button value='+' class='operator' onclick="display('+')">+</button>
+            </div>
+            <h3>Coded by Estaban(N.E.T) <a href='https://codepen.io/your-work/'>see more</a></h3>
+        </div>
+    </section>
+    <script src='script.js'></script>
+</body>
+</html>

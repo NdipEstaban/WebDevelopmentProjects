@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <section id="app">
+        <h1>To-do app</h1>
+        <div id='switches'>
+            <input type='button' id='tab-complete' class="tab" value='Completed' onclick="openTab(event,'completed-tasks','tab-complete', 'tab-incomplete')">
+            <input type='button' id='tab-incomplete' class='tab' value='Incomplete' onclick="openTab(event,'uncompleted-tasks', 'tab-incomplete', 'tab-complete')">
+        </div>
+        <div id='uncompleted-tasks' class='tab-content'>
+            <ul type='none' id='activities-U'>
+                <li id = 'T-1' class='task'>Activity 1<button onclick="clearTask('T-1')" class='delete-buttons'><i class="fas fa-times"></i></button><button onclick = "finishedTask('T-1')" class='success-buttons'><i class="fa fa-duotone fa-check"></i></button></li>
+            </ul>
+        </div>
+        <div id='completed-tasks' class='tab-content'>
+            <ul type='none' id='activities-C'>
+            </ul>
+        </div>
+
+        <input id='add-task' type='text' placeholder='add task' ><button onclick='addTask()' class='add-button'><i class="fas fa-plus"></i></button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
